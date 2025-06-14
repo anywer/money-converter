@@ -1,6 +1,7 @@
 # 💱 Conversor de Moedas - 
 
 Este projeto é um conversor de moedas simples, responsivo e estilizada. Ele permite converter valores entre **Real Brasileiro (BRL)**, **Dólar Americano (USD)** e **Euro (EUR)**, apresentando as taxas de câmbio pré-definidas.
+É focado na utilização de JavaScript para firmar os conhecimentos basicos dessa tecnologia.
 
 ## ✨ Funcionalidades
 
