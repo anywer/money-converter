@@ -123,7 +123,27 @@ currencyConvert.addEventListener("change", currencyToConvert)
 convertButton.addEventListener("click", convertValues)
 
 //movimentação do logo//
+
+
 function moveLogo() {
-    document.querySelector(".logo.active").classList.remove("active")
-    document.querySelector(".logo").classList.add("active")
+const activeLogo = document.querySelector(".moeda.active");
+    document.querySelectorAll(".moeda").forEach(el => el.classList.remove("active")); 
+
+    let logoClass = "";
+    if (currencyConvert.value == "R$" && currencySelect.value == "€") logoClass = "#moedaRE";
+    if (currencyConvert.value == "R$" && currencySelect.value == "US$") logoClass = "#moedaRD";
+    if (currencyConvert.value == "US$" && currencySelect.value == "€") logoClass = "#moedaDE";
+    if (currencyConvert.value == "US$" && currencySelect.value == "R$") logoClass = "#moedaDR";
+    if (currencyConvert.value == "€" && currencySelect.value == "US$") logoClass = "#moedaED";
+    if (currencyConvert.value == "€" && currencySelect.value == "R$") logoClass = "#moedaER";
+
+    const logo = document.querySelector(logoClass);
+    if (logo) logo.classList.add("active");
+
+
 }
+
+
+
+ currencyConvert.addEventListener("change", moveLogo);
+    currencySelect.addEventListener("change", moveLogo);

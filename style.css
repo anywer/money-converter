@@ -13,20 +13,21 @@ body{
 
 .logo{
     width: 300px;
-    height: 250px;
+    height: 200px;
     display: block;
-
     margin-left: auto;
     margin-right: auto;
 }
 
-.moeda {
-    width: 300px;
-    height: 300px;
+.moeda, .moedaDE, .moedaED, .moedaRD, .moedaRE, .moedaER, .moedaED, .moedaDR {
+    width: 250px;
+    height: 250px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     opacity: 0;
+    top: 0;
+    position: absolute;
 }
 
 .active {
@@ -36,7 +37,7 @@ body{
 
 main{
     width: 30vw;
-    height: 130vh;
+    height: 75vh;
     background-color: #F4F4F4;
     border-radius: 20px;
     margin: 0 auto;
@@ -54,7 +55,7 @@ select, input {
     background-color: #FFFFFF;
     border: 1px solid #BBBBBB;
     border-radius: 4px;
-    height: 48px;
+    height: 30px;
     width: 100%;
     margin-bottom: 24px;
     appearance: none;
@@ -91,7 +92,7 @@ button:hover{
     margin-top: 36px;
     padding: 12px;
     display: flex;
-    flex-direction: column;
+    gap: 80px;
     align-items: center;
 }
 
@@ -103,6 +104,7 @@ button:hover{
 
 .arrow{
     margin: 15px 0;
+    rotate: 270deg;
 }
 
 .currency-box {
