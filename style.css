@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Roboto", sans-serif; 
+}
+
+body{
+    background-color: #79d19b;
+    color: #555555;
+}
+
+.logo{
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.moeda, .moedaDE, .moedaED, .moedaRD, .moedaRE, .moedaER, .moedaED, .moedaDR {
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    top: 0;
+    position: absolute;
+}
+
+.active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+main{
+    width: 30vw;
+    height: 75vh;
+    background-color: #F4F4F4;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 44px 24px 23px;
+}
+
+label{
+    font-weight: 400;
+    font-size: 14px;
+    color: #777777;
+}
+
+select, input {
+    display: block;
+    background-color: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 24px;
+    appearance: none;
+    padding-left: 7px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #555555;
+    cursor: pointer;
+
+}
+
+.button{
+    background-color: #772FD3;
+    border-radius: 5px;
+    width: 100%;
+    height: 48px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+button:hover{
+    opacity: 0.8;
+    background-color: #6A27B9;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.25);
+}
+
+.animation {
+    border: 1px solid #772FD3;
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 12px;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+
+
+.real, .currency-Img{
+    width: 80px;
+}
+
+.arrow{
+    margin: 15px 0;
+    rotate: 270deg;
+}
+
+.currency-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    gap: 5px;
+}
+
+.currency{
+    font-weight: 400;
+    font-size: 14px;
+    color: #777777;
+}
+
+.currency-value{
+    font-weight: 700;
+    font-size: 24px;
+    color: #555555;
+}
