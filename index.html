@@ -20,8 +20,8 @@
     <main>
         <label>
             converter <b>de</b>
-            <select>
-            
+            <select class="currency-to-convert">
+
                 <option value="R$">Real Brasileiro</option>
                 <option value="US$">Dolar Americano</option>
                 <option value="€">Euro</option>
@@ -52,8 +52,8 @@
         <section class="animation">
 
             <div class="currency-box">
-                <img src="./assets/real.png" alt="moeda-a-converter" class="real">
-                <p class="currency"> Real</p>
+                <img id="toConvertImg" src="./assets/real.png" alt="moeda-a-converter" class="real">
+                <p class="currency" id="toConvertName"> Real</p>
                 <p class="currency-value"id="toConvert">R$ 0,00</p>
             </div>
 
