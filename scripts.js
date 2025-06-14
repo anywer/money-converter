@@ -121,3 +121,9 @@ convertValues()
 currencySelect.addEventListener("change", changeCurrency)
 currencyConvert.addEventListener("change", currencyToConvert)
 convertButton.addEventListener("click", convertValues)
+
+//movimentação do logo//
+function moveLogo() {
+    document.querySelector(".logo.active").classList.remove("active")
+    document.querySelector(".logo").classList.add("active")
+}
