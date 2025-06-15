@@ -92,7 +92,7 @@ button:hover{
     margin-top: 36px;
     padding: 12px;
     display: flex;
-    gap: 80px;
+    gap: 60px;
     align-items: center;
 }
 
@@ -125,3 +125,29 @@ button:hover{
     font-size: 24px;
     color: #555555;
 }
+
+@media (max-width: 768px) {
+    main {
+        width: 90vw;
+        height: auto;
+        padding: 24px;
+        margin-top: 30px;
+    }
+
+    .moeda, .moedaDE, .moedaED, .moedaRD, .moedaRE, .moedaER, .moedaED, .moedaDR {
+        width: 200px;
+        height: 200px;
+    }
+
+    .logo {
+        width: 200px;
+        height: 133px;
+    }
+
+    .animation {
+    
+        align-items: center;
+        gap: 20px;
+    }
+}
+
